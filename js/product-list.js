@@ -47,7 +47,7 @@ class ProductList {
                 <a href="#" class="close"></a>
               </div>
               <div class="modal__body">
-                <div>
+                <div class="modal__body_container">
                   <img class="modal__img" src="images/goods/${product.image}" alt="">
                   <table class="modal__table">
                     <tr>

@@ -495,6 +495,10 @@ body {
     justify-content: space-between;
     padding: 1.5rem 1.5rem 0 1.5rem;
     border-bottom: 1px solid #e9ecef; }
+    .modal__body_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
     @media only screen and (max-width: 600px) {
       .modal__body {
         flex-direction: column; } }
@@ -503,6 +507,9 @@ body {
     @media only screen and (max-width: 1100px) {
       .modal__img {
         height: 38rem; } }
+    @media only screen and (max-width: 600px) {
+      .modal__img {
+        height: 35rem; } }
   .modal__description {
     font-size: 1.5rem;
     padding: 0 1.5rem;

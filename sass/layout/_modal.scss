@@ -37,6 +37,12 @@
     justify-content: space-between;
     padding: 1.5rem 1.5rem 0 1.5rem;
     border-bottom: 1px solid #e9ecef;
+
+    &_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     
     @media only screen and (max-width: $bp-small) {
       flex-direction: column;
@@ -48,6 +54,10 @@
 
     @media only screen and (max-width: $bp-large) {
       height: 38rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 35rem;
     }
 
   }
