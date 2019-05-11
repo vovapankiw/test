@@ -6,6 +6,10 @@
   height: 10rem;
   background-color:$color-primary;
 
+  @media only screen and (max-width: $bp-medium) {
+    flex-wrap: wrap;
+  }
+
   &__copyright {
     width: 23rem;
 
