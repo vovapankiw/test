@@ -8,10 +8,20 @@
 
   &__copyright {
     width: 23rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
   }
 
   &__image {
     height: 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 4rem;
+    }
   }
 
   &__link-img {
