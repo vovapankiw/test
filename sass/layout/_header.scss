@@ -1,0 +1,105 @@
+.header {
+  background-color: $color-primary;
+  display: flex;
+  align-items: center;
+  height: 8rem;
+
+  &__logo {
+    width: 40rem;
+    margin-right: auto;
+    padding-left: 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-left: 0;
+      margin-left: 30%;
+    }
+  }
+
+  &-nav {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      width: 10%;
+    }
+    
+    &__contacts {
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-align: center;
+      padding-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+
+      & > *{
+        margin: 0 .8rem;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+
+      &__item {
+        font-size: 1.4rem;
+        font-weight: 700;
+        border-radius: 2.5vw 0px;
+        background: linear-gradient(to top, #606060, #CCCECB);
+        border: 2px ridge rgba(204, 206, 203, 1);
+        opacity: 0.8;
+        width: 12.5rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+          display: none;
+        }
+
+        &:hover,
+        &:active {
+          background-position: 100%;
+          color: $color-primary;
+          transform: scale(1.1);
+        }
+      }
+
+      &__link {
+        &:link,
+        &:visited {
+          display: inline-block;
+          font-size: 1.2rem;
+          color:$color-black;
+          text-decoration: none;
+        }
+      }      
+    }
+
+    &__cart {
+      width: 8rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.icon {
+  height: 1.3rem;
+  width: 1.3rem;
+  transform: translateY(2px);
+}
+
+.shoping__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}

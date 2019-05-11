@@ -1,0 +1,130 @@
+.modal {
+    display: none;
+
+  &__content {
+    position: fixed;
+    background-color: white;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+
+    @media only screen and (max-width: $bp-medium) {
+      right: 9%;
+      left: 9%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  &__img {
+    height: 30rem;
+
+    @media only screen and (max-width: $bp-large) {
+      height: 38rem;
+    }
+
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    overflow-y: auto;
+    height: 35rem;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.8rem;
+      height: 45rem;
+    }
+
+  }
+
+  &__table {
+    font-size: 1.3rem;
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.8rem;
+    }
+    
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+/* Close btn */
+.close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+/* Scroll */
+
+#custom-scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#custom-scroll::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#custom-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+

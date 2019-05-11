@@ -1,0 +1,61 @@
+.content {
+  display: flex;
+  width: 100%;
+  height: 50vw;
+
+  @media only screen and (max-width: $bp-large) {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+}
+
+.side-nav {
+  flex: 0 0 23%;
+}
+
+.main {
+  flex: 1;
+}
+
+.main__content {
+  height: 100%;
+  text-align: center;
+
+  &_title {
+    position: relative;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.2vw;
+    text-shadow: 1px 1px 1px black;
+    padding: 2rem;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 5rem;
+      padding: 4rem;
+    }
+  }
+  &_title-secondary {
+    display: none;
+    color: $color-white;
+
+    @media only screen and (max-width: $bp-large) {
+      display: block;
+      font-size: 5rem;
+    }
+  }
+}
+
+.products-container {
+  padding-top: 2rem;
+}
+
+.footer {
+  
+  &__list {
+    display: flex;
+  }
+}
+
+
+

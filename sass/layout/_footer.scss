@@ -1,0 +1,30 @@
+.footer {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  background-color:$color-primary;
+
+  &__copyright {
+    width: 23rem;
+  }
+
+  &__image {
+    height: 5rem;
+  }
+
+  &__link-img {
+    padding: 1rem;
+  }
+}
+
+.maps {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+
+  &__comments {
+    padding: 1rem;
+  }
+}
