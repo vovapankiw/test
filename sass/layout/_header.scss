@@ -12,7 +12,13 @@
     @media only screen and (max-width: $bp-medium) {
       padding-left: 0;
       margin-left: 30%;
+    } 
+
+    @media only screen and (max-width: $bp-small) {
+      padding-left: 0;
+      width: 26rem;
     }
+
   }
 
   &-nav {

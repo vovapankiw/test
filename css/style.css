@@ -46,6 +46,10 @@ body {
       .header__logo {
         padding-left: 0;
         margin-left: 30%; } }
+    @media only screen and (max-width: 600px) {
+      .header__logo {
+        padding-left: 0;
+        width: 26rem; } }
   .header-nav {
     width: 60%;
     height: 100%;
