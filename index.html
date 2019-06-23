@@ -166,14 +166,14 @@
     <!-- MODAL CART-->
     <div id="cartModal" class="cartModal modal cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal__content">
+          <div class="modal__content custom-scroll">
             <div class="modal-header">
               <div class="modal__header">
                 <h5 class="modal__title" id="cartLabel">Корзина</h5>
                 <a href="#" class="close btn-close"></a>
               </div>
             </div>
-            <div class="cart__body custom-scroll">
+            <div class="cart__body">
               <div class="cart-product-list-container"></div>
               <hr>
               <div class="cart__user-detail-container">
@@ -203,11 +203,11 @@
                     <input class="form-control col-8 form-name" type="text" id="client-post-office" required>
                   </div>
                 </form>
+                <div class="cart__footer">
+                  <button type="button" class="btn cart__btn btn-clear" data-dismiss="modal">Очистити</button>
+                  <button class="btn cart__btn order">Замовити</button>
+                </div>
               </div>
-            </div>
-            <div class="cart__footer">
-              <button type="button" class="btn cart__btn btn-clear" data-dismiss="modal">Очистити</button>
-              <button class="btn cart__btn order">Замовити</button>
             </div>
           </div>
         </div>

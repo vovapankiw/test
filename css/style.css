@@ -593,15 +593,10 @@ body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 15px;
-    font-size: inherit;
-    height: 80%;
-    overflow-y: auto; }
+    font-size: inherit; }
     @media only screen and (max-width: 900px) {
       .cart__body {
         padding: 5px; } }
-    @media only screen and (max-width: 600px) {
-      .cart__body {
-        height: 70%; } }
   .cart-product-list-container {
     font-size: inherit; }
   .cart__height-select {
@@ -656,6 +651,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  align-items: center;
   padding: 5px; }
 
 .product__row {
