@@ -8,5 +8,5 @@ function showAlert(message, success = true) {
     setTimeout(() => {
       const elem = document.querySelector('.alert')
       elem.parentNode.removeChild(elem);
-    }, 1000);
+    }, 2000);
 }
