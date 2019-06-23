@@ -15,6 +15,10 @@
     @media only screen and (max-width: $bp-medium) {
       padding: 5px;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 70%;
+    }
   }
 
   &-product-list-container {
@@ -123,7 +127,13 @@
   @media only screen and (max-width: $bp-small) {
     width: 30%;
   }
-  
+}
+
+/* BUTTON CLEAR AND ORDER*/
+.cart__btn {
+  @media only screen and (max-width: $bp-small) {
+    font-size: 8px;
+  }
 }
 
 /* COLUMNS IN CART */

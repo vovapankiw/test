@@ -593,6 +593,9 @@ body {
     @media only screen and (max-width: 900px) {
       .cart__body {
         padding: 5px; } }
+    @media only screen and (max-width: 600px) {
+      .cart__body {
+        height: 70%; } }
   .cart-product-list-container {
     font-size: inherit; }
   .cart__height-select {
@@ -663,6 +666,11 @@ body {
 @media only screen and (max-width: 600px) {
   .btn-sm {
     width: 30%; } }
+
+/* BUTTON CLEAR AND ORDER*/
+@media only screen and (max-width: 600px) {
+  .cart__btn {
+    font-size: 8px; } }
 
 /* COLUMNS IN CART */
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-8 {
