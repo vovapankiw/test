@@ -487,7 +487,7 @@ body {
       .modal__content {
         top: 12%;
         bottom: 4%;
-        height: 60%;
+        height: 80%;
         z-index: 100000; } }
   .modal__header {
     display: flex;
@@ -601,7 +601,7 @@ body {
         padding: 5px; } }
     @media only screen and (max-width: 600px) {
       .cart__body {
-        height: 65%; } }
+        height: 70%; } }
   .cart-product-list-container {
     font-size: inherit; }
   .cart__height-select {
