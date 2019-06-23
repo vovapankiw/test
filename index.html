@@ -164,34 +164,50 @@
     </div>
 
     <!-- MODAL CART-->
-    <div id="cartModal" class="cartModal modal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+    <div id="cartModal" class="cartModal modal cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal__content">
             <div class="modal-header">
               <div class="modal__header">
-                <h5 class="modal__title" id="productInfoLabel">${product.title}</h5>
-                <a href="#" class="close"></a>
+                <h5 class="modal__title" id="cartLabel">Корзина</h5>
+                <a href="#" class="close btn-close"></a>
               </div>
             </div>
-            <div class="modal-body">
+            <div class="cart__body custom-scroll">
               <div class="cart-product-list-container"></div>
               <hr>
-              <div class="container">
-                <form>
-                  <div class="form-group row">
-                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
-                    <input class="form-control col-8" type="text" id="client-name" required>
+              <div class="cart__user-detail-container">
+                <form class="cart__form">
+                  <div class="form-group">
+                    <label for="client-name" class="col-4 col-form-label">Ваше ім'я та прізвище:</label>
+                    <input class="form-control col-8 form-name" type="text" id="client-name" required>
                   </div>
-                  <div class="form-group row">
-                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                  <div class="form-group form-email">
+                    <label for="client-email" class="col-4 col-form-label">Ваш email:</label>
                     <input class="form-control col-8" type="email" id="client-email" required>
+                  </div>
+                  <div class="form-group form-number">
+                    <label for="client-phone" class="col-4 col-form-label">Ваш телефон:</label>
+                    <input class="form-control col-8" type="number" id="client-phone" required>
+                  </div>
+                  <div class="form-group form-city">
+                    <label for="client-city" class="col-4 col-form-label">Місто доставки</label>
+                    <input class="form-control col-8" type="text" id="client-city" required>
+                  </div>
+                  <div class="form-group form-post">
+                    <label for="client-post" class="col-4 col-form-label">Спосіб доставки:</label>
+                    <input class="form-control col-8" type="text" id="client-post" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="client-post-office" class="col-4 col-form-label">Відділення</label>
+                    <input class="form-control col-8 form-name" type="text" id="client-post-office" required>
                   </div>
                 </form>
               </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button class="btn btn-primary order">Order</button>
+            <div class="cart__footer">
+              <button type="button" class="btn cart__btn btn-clear" data-dismiss="modal">Очистити</button>
+              <button class="btn cart__btn order">Замовити</button>
             </div>
           </div>
         </div>

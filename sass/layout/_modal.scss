@@ -4,11 +4,12 @@
   &__content {
     position: fixed;
     background-color: white;
-    top: 10%;
+    top: 9%;
     left: 10%;
     right: 10%;
-    bottom: 10%;
+    bottom: 9%;
     overflow: auto;
+    border-radius: 10px;
 
     @media only screen and (max-width: $bp-medium) {
       right: 9%;

@@ -26,7 +26,7 @@ class ProductList {
                         Info
                       </button>   
                       <button class="btn btn-buy" data-id="${product.id}">
-                        $${product.price} - Buy
+                        $${product.price[0].price} - Buy
                       </button> 
                     </div> 
                   </div>
@@ -77,7 +77,7 @@ class ProductList {
                     </tr>
                   </table>
                 </div>
-                <p class="modal__description" id="custom-scroll">
+                <p class="modal__description custom-scroll">
                     ${product.description}
                 </p>
               </div>
