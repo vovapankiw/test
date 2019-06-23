@@ -473,10 +473,10 @@ body {
   .modal__content {
     position: fixed;
     background-color: white;
-    top: 9%;
+    top: 10%;
     left: 10%;
     right: 10%;
-    bottom: 9%;
+    bottom: 7%;
     overflow: auto;
     border-radius: 10px; }
     @media only screen and (max-width: 900px) {
