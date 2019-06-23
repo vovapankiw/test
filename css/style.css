@@ -483,6 +483,12 @@ body {
       .modal__content {
         right: 9%;
         left: 9%; } }
+    @media only screen and (max-width: 600px) {
+      .modal__content {
+        top: 12%;
+        bottom: 4%;
+        height: 60%;
+        z-index: 100000; } }
   .modal__header {
     display: flex;
     justify-content: space-between;
@@ -595,7 +601,7 @@ body {
         padding: 5px; } }
     @media only screen and (max-width: 600px) {
       .cart__body {
-        height: 70%; } }
+        height: 65%; } }
   .cart-product-list-container {
     font-size: inherit; }
   .cart__height-select {
