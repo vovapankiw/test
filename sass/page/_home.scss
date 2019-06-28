@@ -1,7 +1,6 @@
 .content {
   display: flex;
   width: 100%;
-  height: 50vw;
 
   @media only screen and (max-width: $bp-large) {
     height: auto;
@@ -44,10 +43,6 @@
       font-size: 5rem;
     }
   }
-}
-
-.products-container {
-  padding-top: 2rem;
 }
 
 .footer {

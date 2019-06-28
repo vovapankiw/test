@@ -1,11 +1,13 @@
 class ProductList {
-    constructor (productsUrl, renderContainer, cart) {
+    constructor (productsUrl, renderContainer, cart, type = '') {
         this.cart = cart;
         fetch(productsUrl)
             .then(result => result.json() )
             .then(products => {
-                this.products = products;
-                this.renderProducts(renderContainer, products);
+                this.products = type 
+                ? products.filter(el => el.type === type)
+                : products;
+                this.renderProducts(renderContainer, this.products);
                 this.addEventListeners();
             })
     }
@@ -23,10 +25,10 @@ class ProductList {
                     <div class="btn__container">
                       <button class="btn btn-info" data-toggle="modal"
                       data-target="#productInfoModal" data-id="${product.id}">
-                        Info
+                        Інфо
                       </button>   
                       <button class="btn btn-buy" data-id="${product.id}">
-                        $${product.price[0].price} - Buy
+                        $${product.price[0].price} - Купити
                       </button> 
                     </div> 
                   </div>
@@ -83,8 +85,8 @@ class ProductList {
               </div>
               
               <div class="modal__footer">
-                <button type="button" class="btn btn-close modal__btn">Close</button>
-                <button class="btn modal__btn-buy modal__btn" data-id="id">Buy</button>
+                <button type="button" class="btn btn-close modal__btn">Закрити</button>
+                <button class="btn modal__btn-buy modal__btn" data-id="id">Купити</button>
               </div>
             </div>
             `;

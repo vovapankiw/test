@@ -1,15 +1,35 @@
+// Hide product grid
+document.querySelector('.all_products_container').style.display = 'none';
+
+/*ALL PRODUCT TYPES*/
+const types = ['cyparis', 'larix', 'pinus', 'taxus', 'thuja'];
+
 /*PRODUCT LIST*/
+const cart = new Cart($('#cartModal'));
+let productList = new ProductList('products.json', $('.products-container'), cart);
+
+// Handle click on Home btn
+document.querySelector('.home').addEventListener('click', () => {
+  document.querySelector('.main__content').style.display = 'block';
+  document.querySelector('.all_products_container').style.display = 'none';
+});
+
+// Handle click on All good btn
 const categoryBtn = document.getElementById('allGoods').addEventListener('click', (e) => {
   // Hide slider in case we are redirecting from main page
   document.querySelector('.main__content').style.display = 'none';
-
-  // Initializing product list and cart
-  // const cart = new Cart($('.header-nav__cart'));
-  // let productList = new ProductList('products.json', $('.products-container'), cart);
+  // Show grid of products
+  document.querySelector('.all_products_container').style.display = 'block';
+  productList = new ProductList('products.json', $('.products-container'), cart);
 });
 
-const cart = new Cart($('#cartModal'));
-let productList = new ProductList('products.json', $('.products-container'), cart);
+types.forEach(el => {
+  document.querySelector(`.${el}`).addEventListener('click', () => {
+    document.querySelector('.main__content').style.display = 'none';
+    document.querySelector('.all_products_container').style.display = 'block';
+    productList = new ProductList('products.json', $('.products-container'), cart, `${el}`);
+  })
+})
 
 /* SLIDER */
 let slideIndex = 0;
