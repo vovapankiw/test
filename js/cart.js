@@ -72,7 +72,6 @@ class Cart {
                 </div>`;
         for (const id in this.cart) {
             const product = productList.getProductById(id);
-            console.log(productList.getProductById(id))
             total += product.price[this.cart[id].height].price * this.cart[id].quantity;
             cartDomSting += 
                 `<div class="row product__row" data-id="${id}"> 

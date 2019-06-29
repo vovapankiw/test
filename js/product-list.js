@@ -4,6 +4,7 @@ class ProductList {
         fetch(productsUrl)
             .then(result => result.json() )
             .then(products => {
+                this.fullProductList = products;
                 this.products = type 
                 ? products.filter(el => el.type === type)
                 : products;
@@ -12,7 +13,7 @@ class ProductList {
             })
     }
     getProductById(id) {
-        return this.products.find(el => el.id === id);
+        return  this.fullProductList.find(el => el.id === id);
     }
     renderProducts(container, products) {
         let productListDomString = ''
