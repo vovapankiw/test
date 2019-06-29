@@ -2,7 +2,7 @@
 document.querySelector('.all_products_container').style.display = 'none';
 
 /*ALL PRODUCT TYPES*/
-const types = ['cyparis', 'larix', 'pinus', 'taxus', 'thuja'];
+const types = ['all-goods','cyparis', 'larix', 'pinus', 'taxus', 'thuja'];
 
 /*PRODUCT LIST*/
 const cart = new Cart($('#cartModal'));
@@ -14,20 +14,24 @@ document.querySelector('.home').addEventListener('click', () => {
   document.querySelector('.all_products_container').style.display = 'none';
 });
 
-// Handle click on All good btn
-const categoryBtn = document.getElementById('allGoods').addEventListener('click', (e) => {
-  // Hide slider in case we are redirecting from main page
-  document.querySelector('.main__content').style.display = 'none';
-  // Show grid of products
-  document.querySelector('.all_products_container').style.display = 'block';
-  productList = new ProductList('products.json', $('.products-container'), cart);
-});
+// // Handle click on All good btn
+// const categoryBtn = document.getElementById('allGoods').addEventListener('click', (e) => {
+//   // Hide slider in case we are redirecting from main page
+//   document.querySelector('.main__content').style.display = 'none';
+//   // Show grid of products
+//   document.querySelector('.all_products_container').style.display = 'block';
+//   productList = new ProductList('products.json', $('.products-container'), cart);
+// });
 
+/* EVENT HANDLERS FOR EACH CATEGORY*/
 types.forEach(el => {
-  document.querySelector(`.${el}`).addEventListener('click', () => {
-    document.querySelector('.main__content').style.display = 'none';
-    document.querySelector('.all_products_container').style.display = 'block';
-    productList = new ProductList('products.json', $('.products-container'), cart, `${el}`);
+  document.querySelectorAll(`.${el}`).forEach(node => {
+    node.addEventListener('click', () => {
+      document.querySelector('.main__content').style.display = 'none';
+      document.querySelector('.all_products_container').style.display = 'block';
+      el = el === 'all-goods' ? '': el;
+      productList = new ProductList('products.json', $('.products-container'), cart, `${el}`);
+    })
   })
 })
 

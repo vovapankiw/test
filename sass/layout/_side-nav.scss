@@ -1,5 +1,10 @@
 .side-nav {
   font-weight: bold;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 
   &__list {
     width: 100%;
@@ -9,23 +14,18 @@
     align-items: center;
     list-style-type: none;
     margin-top: 1.5rem;
-
-    @media only screen and (max-width: $bp-large) {
-      padding-top: 4rem;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
   }
 
   &__item {
     width: 80%;
-    height: 3.5rem; 
+    height: 4.5rem; 
     margin-bottom: 10px; 
     
-    @media only screen and (max-width: $bp-large) {
-      width: 40%;
-      margin-bottom: 3rem;
-    }
+    // @media only screen and (max-width: $bp-large) {
+    //   width: 34%;
+    //   margin-bottom: 3rem;
+    //   margin-right: 3rem;
+    // }
 
     &_btn { 
       font: inherit;
@@ -45,7 +45,7 @@
       cursor: pointer;
 
       @media only screen and (max-width: $bp-large) {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
       }
     }
       &:hover,
