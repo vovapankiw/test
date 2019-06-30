@@ -25,6 +25,7 @@
     font-size: 2.2vw;
     text-shadow: 1px 1px 1px black;
     padding: 2rem;
+    text-align: center;
 
     @media only screen and (max-width: $bp-large) {
       font-size: 5rem;
@@ -45,6 +46,18 @@
       font-size: 5rem;
     }
   }
+
+  &_subtitle {
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    padding-bottom: 1.5rem;
+  }
+
 }
 
 .footer {

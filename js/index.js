@@ -33,7 +33,14 @@ types.forEach(el => {
       productList = new ProductList('products.json', $('.products-container'), cart, `${el}`);
     })
   })
-})
+});
+
+/*HANDLE GALLERY BUTTON*/
+const galleryBtn = document.querySelector('.gallery-btn').addEventListener('click', () => {
+  document.querySelector('.all_products_container').style.display = 'none';
+  document.querySelector('.main__content').style.display = 'none';
+  new Gallery('gallery.json', $('.gallery'));
+});
 
 /* SLIDER */
 let slideIndex = 0;
