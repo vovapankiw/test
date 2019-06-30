@@ -28,6 +28,7 @@ types.forEach(el => {
   document.querySelectorAll(`.${el}`).forEach(node => {
     node.addEventListener('click', () => {
       document.querySelector('.main__content').style.display = 'none';
+      document.querySelector('.gallery__container').style.display = 'none';
       document.querySelector('.all_products_container').style.display = 'block';
       el = el === 'all-goods' ? '': el;
       productList = new ProductList('products.json', $('.products-container'), cart, `${el}`);
@@ -40,6 +41,7 @@ const galleryBtn = document.querySelectorAll('.gallery-btn').forEach(el => {
   el.addEventListener('click', () => {
     document.querySelector('.all_products_container').style.display = 'none';
     document.querySelector('.main__content').style.display = 'none';
+    document.querySelector('.gallery__container').style.display = 'block';
     document.getElementById('navi-toggle').click();
     new Gallery('gallery.json', $('.gallery'));
   });

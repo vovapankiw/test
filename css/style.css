@@ -831,6 +831,7 @@ body {
   grid-row-gap: 8px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
   .gallery__container {
+    display: none;
     padding: 1rem; }
 
 .gallery img {
@@ -903,8 +904,8 @@ body {
       bottom: 53px; } }
   @media only screen and (max-width: 31.25em) {
     .photo-title {
-      width: 57.5%;
-      bottom: 127px;
+      width: 49.5%;
+      bottom: 20.4%;
       font-size: 1.5rem; } }
 
 .content {
