@@ -36,11 +36,14 @@ types.forEach(el => {
 });
 
 /*HANDLE GALLERY BUTTON*/
-const galleryBtn = document.querySelector('.gallery-btn').addEventListener('click', () => {
-  document.querySelector('.all_products_container').style.display = 'none';
-  document.querySelector('.main__content').style.display = 'none';
-  new Gallery('gallery.json', $('.gallery'));
-});
+const galleryBtn = document.querySelectorAll('.gallery-btn').forEach(el => {
+  el.addEventListener('click', () => {
+    document.querySelector('.all_products_container').style.display = 'none';
+    document.querySelector('.main__content').style.display = 'none';
+    document.getElementById('navi-toggle').click();
+    new Gallery('gallery.json', $('.gallery'));
+  });
+})
 
 /* SLIDER */
 let slideIndex = 0;
