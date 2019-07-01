@@ -43,6 +43,7 @@ class Gallery {
           const altura = getVal(gallery, 'grid-auto-rows');
           const gap = getVal(gallery, 'grid-row-gap');
           const gitem = item.parentElement.parentElement;
+          console.log(getHeight(gitem))
           gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
           item.classList.remove('byebye');
         });
