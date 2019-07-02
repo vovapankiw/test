@@ -103,7 +103,20 @@ body {
       height: 4rem;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      text-decoration: none; }
+
+.badge {
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  color: black;
+  background-color: yellow;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 15px; }
 
 .icon {
   height: 1.3rem;
