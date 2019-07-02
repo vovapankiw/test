@@ -12,6 +12,7 @@ let productList = new ProductList('products.json', $('.products-container'), car
 document.querySelector('.home').addEventListener('click', () => {
   document.querySelector('.main__content').style.display = 'block';
   document.querySelector('.all_products_container').style.display = 'none';
+  document.querySelector('.gallery__container').style.display = 'none';
 });
 
 // // Handle click on All good btn

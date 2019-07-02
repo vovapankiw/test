@@ -34,7 +34,7 @@ class Gallery {
       const gap = getVal(gallery, 'grid-row-gap');
       gallery.querySelectorAll('.gallery-item').forEach(function (item) {
           const el = item;
-          el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+          // el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
       });
     };
     gallery.querySelectorAll('img').forEach(function (item) {
@@ -43,8 +43,7 @@ class Gallery {
           const altura = getVal(gallery, 'grid-auto-rows');
           const gap = getVal(gallery, 'grid-row-gap');
           const gitem = item.parentElement.parentElement;
-          console.log(getHeight(gitem))
-          gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+          // gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
           item.classList.remove('byebye');
         });
     });
