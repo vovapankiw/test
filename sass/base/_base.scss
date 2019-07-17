@@ -30,10 +30,26 @@ body {
   background-size: 100%;
 }
 
-.android-scroll-bar ::-webkit-scrollbar {width: 5px;}
+:root::-webkit-scrollbar {
+  width: 16px;
+}
 
-.android-scroll-bar ::-webkit-scrollbar-track { border-radius: 10px;}
+:root::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: white; 
+}
 
-.android-scroll-bar ::-webkit-scrollbar-thumb { border-radius: 10px; background: rgb(169,169,169); }
+:root::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ADADAD;
+}
 
-.android-scroll-bar ::-webkit-scrollbar-thumb:window-inactive {background: rgb(128,128,128); }
+:root::-webkit-scrollbar-thumb:window-inactive {
+  background: #ADADAD;
+}
+/*Nothing to do with this*/
+:root {
+font-size: 200px
+}
