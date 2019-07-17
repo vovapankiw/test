@@ -33,26 +33,6 @@ body {
   background: url(../images/background.jpg) center top;
   background-size: 100%; }
 
-:root::-webkit-scrollbar {
-  width: 16px; }
-
-:root::-webkit-scrollbar-track {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: white; }
-
-:root::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: #ADADAD; }
-
-:root::-webkit-scrollbar-thumb:window-inactive {
-  background: #ADADAD; }
-
-/*Nothing to do with this*/
-:root {
-  font-size: 200px; }
-
 .header {
   background-color: rgba(0, 128, 0, 0.8);
   display: flex;
