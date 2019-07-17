@@ -33,18 +33,25 @@ body {
   background: url(../images/background.jpg) center top;
   background-size: 100%; }
 
-.android-scroll-bar ::-webkit-scrollbar {
-  width: 5px; }
+:root::-webkit-scrollbar {
+  width: 16px; }
 
-.android-scroll-bar ::-webkit-scrollbar-track {
-  border-radius: 10px; }
-
-.android-scroll-bar ::-webkit-scrollbar-thumb {
+:root::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: darkgray; }
+  background: white; }
 
-.android-scroll-bar ::-webkit-scrollbar-thumb:window-inactive {
-  background: gray; }
+:root::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ADADAD; }
+
+:root::-webkit-scrollbar-thumb:window-inactive {
+  background: #ADADAD; }
+
+/*Nothing to do with this*/
+:root {
+  font-size: 200px; }
 
 .header {
   background-color: rgba(0, 128, 0, 0.8);
