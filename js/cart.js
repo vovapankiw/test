@@ -143,7 +143,6 @@ class Cart {
       }
         const form  = this.cartContainer.find('form')[0];
         if (form.checkValidity()) {
-          console.log('dsdsd')
             ev.preventDefault();
             let finalSum = 0;
             let result = Object.keys(this.cart).map(el => {
